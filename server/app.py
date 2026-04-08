@@ -1,11 +1,12 @@
 import sys
 import os
-# This ensures the server can see files in the parent directory (for models.py)
+import uvicorn
+from fastapi import FastAPI
+
+# Add parent directory to path to find models.py
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from fastapi import FastAPI
 from models import Action, Observation, State
-# Direct import since environment.py is in the same folder as app.py
 from .environment import SQLEnv 
 
 app = FastAPI()
@@ -37,3 +38,10 @@ def get_state():
 @app.get("/")
 def health_check():
     return {"status": "alive", "framework": "OpenEnv"}
+
+# CRITICAL: Added main() function for OpenEnv validator
+def main():
+    uvicorn.run("server.app:app", host="0.0.0.0", port=7860, reload=False)
+
+if __name__ == "__main__":
+    main()
