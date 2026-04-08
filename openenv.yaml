@@ -1,0 +1,11 @@
+name: "SQL-Optimizer-Env"
+version: "1.0.0"
+description: "A real-world SQL debugging and optimization environment for AI agents."
+entry_point: "server.app:app"
+tasks:
+  - id: "sql_basic"
+    difficulty: "easy"
+  - id: "sql_join"
+    difficulty: "medium"
+  - id: "sql_opt"
+    difficulty: "hard"
