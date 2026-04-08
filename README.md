@@ -15,6 +15,7 @@ A real-world OpenEnv simulation designed for training and evaluating AI agents i
 * **Live Environment (Hugging Face):** [https://huggingface.co/spaces/AnshRaut93/anshraut-sql-env](https://huggingface.co/spaces/AnshRaut93/anshraut-sql-env)
 * **API Documentation:** [https://anshraut93-anshraut-sql-env.hf.space/docs](https://anshraut93-anshraut-sql-env.hf.space/docs)
 * **GitHub Repository:** [https://github.com/Anshraut9/Hackathon_Meta_AI_anshraut-sql-env](https://github.com/Anshraut9/Hackathon_Meta_AI_anshraut-sql-env)
+
 ---
 
 ## 🚀 Overview
@@ -50,6 +51,10 @@ The agent interacts with the environment via the following endpoints:
 ## 📝 Setup & Local Development
 If you want to run this environment locally:
 
+1. **Clone the repo:**
+   ```bash
+   git clone [https://github.com/Anshraut9/Hackathon_Meta_AI_anshraut-sql-env.git](https://github.com/Anshraut9/Hackathon_Meta_AI_anshraut-sql-env.git)
+   cd Hackathon_Meta_AI_anshraut-sql-env
 1. **Clone the repo:**
    ```bash
    git clone [https://github.com/AnshRaut93/anshraut-sql-env.git](https://github.com/AnshRaut93/anshraut-sql-env.git)
